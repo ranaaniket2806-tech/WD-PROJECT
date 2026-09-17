@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <style>
+        /* Global Reset */
+    /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: #ffffff;
+            font-size: 14px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            background-color: #000000;
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            border-bottom: 1px solid #1a1a1a;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #e5e5e5;
+            text-decoration: none;
+            font-size: 14px;
+            /* transition: color 0.2s; */
+        }
+
+        .nav-links a:hover {
+            color: #f5c518;
+        }
+
+        /* Outer Border & Table Structure */
+        table {
+            border-collapse: separate;
+            border-spacing: 60px;
+            border: 2px solid #555555;
+            padding: 10px;
+            background-color: #000000;
+        }
+
+        td {
+            border: 1px solid #777777;
+            padding: 10px;
+            width: 220px;
+            background-color: #0d0d0d;
+        }
+
+        /* Poster Container */
+        .poster {
+            width: 100%;
+            height: 280px;
+            margin-bottom: 15px;
+            border: 1px solid #333333;
+            background-color: #1a1a1a;
+        }
+
+        .poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Movie Details Unordered List */
+        ul.movie-details {
+            padding-left: 18px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        ul.movie-details li {
+            margin-bottom: 3px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .star {
+            color: #f5c518;
+        }
+          .spot{
+            margin: 20px;
+
+            
+           
+        }
+    </style>
+</head>
+<body>
+    
+<div>
+    <!-- Header Navigation Bar -->
+    <header>
+        <div class="spot"><h2>🎬  MOVIE SPOT</h2></div>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home 🏡 </a></li>
+                <li><a href="..//catalogue/Catalogue.html">Catalogue </a></li>
+                <li><a href="..//about/about.html">About</a></li>
+                
+  
+                
+            </ul>
+
+        </nav>
+       
+    </header>
+
+    <table>
+        <!-- Row 1 -->
+        <tr>
+            <!-- Card 1 -->
+            <td>
+                <div class="poster">
+                    <a href="./coolie.html" target="_blank">
+                    <img src="https://www.wallsnapy.com/img_gallery/coolie-movie-rajini--poster-4k-download-9445507.jpg" alt="Coolie"></a>
+                </div>
+                <ul class="movie-details">
+                    <li><span class="bold">Name :-</span> Coolie</li>
+                    <li><span class="bold">Genre :</span> Action | Drama | Thriller</li>
+                    <li><span class="bold">Rating :</span> <span class="star">★</span> 6.5</li>
+                    <li><span class="bold">Director :</span> Lokesh Kanagaraj</li>
+                    <li><span class="bold">Duration :</span>2h and 50 min</li>
+                </ul>
+            </td>
+            <!-- Card 2 -->
+            <td>
+                <div class="poster">
+                    <a href="./vaazha 2.html" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgDA5aG8MzS7Av1DHTpAqDNd6LaTq4EKCqaU3bQarOAA&s=10" alt="Vaazha 2"></a>
+                </div>
+                <ul class="movie-details">
+                    <li><span class="bold">Name :-</span> Vaazha 2</li>
+                    <li><span class="bold">Genre :</span> Comedy | Drama</li>
+                    <li><span class="bold">Rating :</span> <span class="star">★</span>8.0</li>
+                    <li><span class="bold">Director :</span> Anand Menen</li>
+                    <li><span class="bold">Duration :</span> 2h and 45 min</li>
+                </ul>
+            </td>
+            <!-- Card 3 -->
+            <td>
+                <div class="poster">
+                    <a href="./the conjuring.html" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgCvXZErcfoD89qqa5Z_Gn6HI5vz6RDsruL7FNn-jkIg&s=10" alt="The Conjuring"></a>
+                </div>
+                <ul class="movie-details">
+                    <li><span class="bold">Name :-</span> The Conjuring</li>
+                    <li><span class="bold">Genre :</span> Horror | Mystery | Thriller</li>
+                    <li><span class="bold">Rating :</span> <span class="star">★</span> 7.5</li>
+                    <li><span class="bold">Director :</span> James Wan</li>
+                    <li><span class="bold">Duration :</span> 1h and 52 min </li>
+                </ul>
+            </td>
+
+        
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <!-- Card 4-->
+                   <td>
+                <div class="poster">
+                    <a href="./dude.html" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrqmLdG6HfIjXHF2c1jqoqujO9iqmAKKsiG3sBM0XBnA&s=10" alt=" Dude"></a>
+                </div>
+                <ul class="movie-details">
+                    <li><span class="bold">Name :-</span> Dude</li>
+                    <li><span class="bold">Genre :</span> Romantic Comedy | Comedy Drama</li>
+                    <li><span class="bold">Rating :</span> <span class="star">★</span> 6.3</li>
+                    <li><span class="bold">Director :</span> Keerthiswaran</li>
+                    <li><span class="bold">Duration :</span> 2h and 19 min</li>
+                </ul>
+            </td>
+
+            <!-- Card 5 -->
+            <td>
+                <div class="poster">
+                    <a href="./sinister.html" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ54ZM-D1b_uA8OpZ9pEDkIwcqFES5pkYxFyslSeXyVA&s=10" alt="Sinister"></a>
+                </div>
+                <ul class="movie-details">
+                    <li><span class="bold">Name : Sinister</span></li>
+                    <li><span class="bold">Genre : supernatural horror | supernatural thriller </span></li>
+                    <li><span class="bold">Rating :</span> <span class="star">★</span>6.8</li>
+                    <li><span class="bold">Director : Scott Derrickson</span></li>
+                    <li><span class="bold">Duration : 1h 50 min </span> </li>
+                </ul>
+            </td>
+
+            <!-- Card 6 -->
+            <td>
+                <div class="poster">
+                    <a href="./youth.html" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcrAQ4RhnQnL54MSfGx6xoAtKd5PnMzjJb5Qy8lqVm_A&s=10" alt="Youth"></a>
+                </div>
+                <ul class="movie-details">
+                    <li><span class="bold">Name : Youth</span></li>
+                    <li><span class="bold">Genre :Romantic | comedy | drama</span></li>
+                    <li><span class="bold">Rating :</span> <span class="star">★</span> 7.0</li>
+                    <li><span class="bold">Director : Ken Karunas</span></li>
+                    <li><span class="bold">Duration :  2h and 20 min</span></li>
+                </ul>
+            </td>
+
+        </tr>
+    </table>
+</div>
+</body>
+</html>

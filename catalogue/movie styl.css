@@ -1,0 +1,79 @@
+* {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Black background & Flexbox vertical/horizontal centering */
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        /* Large Movie Card Container */
+        .movie-card {
+            background-color: #111111;
+            border: 1px solid #222222;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+        }
+
+ 
+
+        /* Poster Area Placeholder (No media tags used) */
+        .poster {
+            min-width: 380px;
+            background: linear-gradient(135deg, #1f1f1f 0%, #0a0a0a 100%);
+            display: flex;
+            border-right: 1px solid #222222;
+        }
+
+        /* Movie Details Area */
+        .details {
+            padding: 40px;
+        }
+
+        .title {
+            font-size: 2.8rem;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #888888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .description {
+            color: #dddddd;
+            line-height: 1.7;
+            font-size: 1.15rem;
+            margin-bottom: 25px;
+        }
+
+        .credits {
+            font-size: 1.05rem;
+            color: #aaaaaa;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .credits span {
+            color: #ffffff;
+        }
+
+        /* Trailer Button */
+        .btn-trailer {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 16px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.2s ;
+            margin-right: 10px;
+        }
+
+        .btn-trailer:hover {
+            background-color: #cccccc;
+        }

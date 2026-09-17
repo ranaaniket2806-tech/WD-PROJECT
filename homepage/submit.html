@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Submitted</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* Success Notification Banner */
+        .notification {
+            background-color: #1e3a1e;
+            border: 1px solid #2e6b2e;
+            color: #4caf50;
+            padding: 16px 24px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(76, 175, 80, 0.15);
+        }
+
+        .notification-icon {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .notification-text {
+            font-size: 1rem;
+        }
+
+        /* Container Card */
+        .feedback-card {
+            background-color: #111111;
+            border: 1px solid #222222;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+        }
+
+        .title {
+            font-size: 2.2rem;
+            font-weight: bold;
+            line-height: 1.1;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #aaaaaa;
+        }
+
+        /* Action Button */
+        .btn-home {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #000000;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.2s ;
+        }
+
+        .btn-home:hover {
+            background-color: #cccccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Notification Banner -->
+    <div class="notification">
+        <span class="notification-icon">✓</span>
+        <div class="notification-text">
+            <strong>Success!</strong> Your feedback form has been successfully submitted.
+        </div>
+    </div>
+
+    <!-- Confirmation Card -->
+    <div class="feedback-card">
+        <h1 class="title">Thank You!</h1>
+        <p class="subtitle">We have received your response and appreciate you taking the time to share your feedback with us.</p>
+        <div>
+            <a href="./homepage.html" class="btn-home">Return to Home</a>
+        </div>
+    </div>
+
+</body>
+</html>

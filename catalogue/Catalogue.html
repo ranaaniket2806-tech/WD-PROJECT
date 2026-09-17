@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Explorer</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #0d0d0d;
+            color: #ffffff;
+            font-size: 14px;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        header {
+            background-color: #000000;
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            border-bottom: 1px solid #1a1a1a;
+            margin-bottom: 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #e5e5e5;
+            text-decoration: none;
+            font-size: 14px;
+            /* transition: color 0.2s; */
+        }
+
+        .nav-links a:hover {
+            color: #f5c518;
+        }
+
+        /* Outer Border & Table Structure */
+        table {
+            border-collapse: separate;
+            border-spacing: 60px;
+            border: 2px solid #555555;
+            padding: 10px;
+            background-color: #000000;
+        }
+
+        td {
+            border: 1px solid #777777;
+            padding: 10px;
+            width: 220px;
+            background-color: #0d0d0d;
+        }
+
+        /* Poster Container */
+        .poster {
+            width: 100%;
+            height: 280px;
+            margin-bottom: 15px;
+            border: 1px solid #333333;
+            background-color: #1a1a1a;
+        }
+
+        .poster img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Movie Details Unordered List */
+        ul.movie-details {
+            padding-left: 18px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        ul.movie-details li {
+            margin-bottom: 3px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .star {
+            color: #f5c518;
+        }
+          .spot{
+            margin: 20px;
+
+            
+           
+        }
+    </style>
+</head>
+<body>
+<div>
+    <!-- Header Navigation Bar -->
+    <header>
+        <div class="spot"><h2>🎬  MOVIE SPOT</h2></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="..//homepage/homepage.html" >Home 🏡</a></li>
+                <li><a href="#">Catalogue</a></li>
+                <li><a href="..//about/about.html">About</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+
+    <table  align="center">
+        <!-- Row 1 -->
+        <tr>
+            <!-- Card 1 -->
+            <td>
+                <div class="poster">
+                    <a href="./leo.html" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCY89w8nEzHJybmgTEb0RFTFu5z_HYipvgvQoPEkmTQg&s" alt="Leo"></a>
+                </div>
+                <ul class="movie-details">
+                    <li><span class="bold">Name :-</span> Leo</li>
+                    <li><span class="bold">Genre :</span> Action | Crime | Thriller</li>
+                    <li><span class="bold">Rating :</span> <span class="star">★</span> 7.2</li>
+                    <li><span class="bold">Director :</span> Lokesh Kanagaraj</li>
+                    <li><span class="bold">Duration :</span> 2h and 44 min</li>
+                </ul>
+            </td>
+
+            <!-- Card 2 -->
+            <td>
+                <div class="poster">
+                    <a href="./kaithi.html"target="_blank" >
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm5UDIb_wLy1scvHXvGsT7-NtbhQB1IH7UfnrkcknfC-TS6VTsqmKbWnQ&s=10" alt="Kaithi"></a>
+                </div>
+                <ul class="movie-details">
+                    <li><span class="bold">Name :-</span> Kaithi</li>
+                    <li><span class="bold">Genre :</span> Action | Crime | Thriller</li>
+                    <li><span class="bold">Rating :</span> <span class="star">★</span> 8.5</li>
+                    <li><span class="bold">Director :</span> Lokesh Kanagaraj</li>
+                    <li><span class="bold">Duration :</span> 2h and 25 min </li>
+                </ul>
+            </td>
+
+            <!-- Card 3 -->
+            <td>
+                <div class="poster">
+                    <a href="./toxic.html" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_5VO3rRgkXeAErJNQqsq5wzRuhc1_TNgA4vN5Y5FZEnrXyqF1z6LVUx2P&s=10" alt="Toxic">
+                    </a> 
+                </div>
+                <ul class="movie-details">
+                    <li><span class="bold">Name :-</span> Toxic</li>
+                    <li><span class="bold">Genre :</span> Action | Drama</li>
+                    <li><span class="bold">Rating :</span> <span class="star">★</span> 4.1</li>
+                    <li><span class="bold">Director :</span> Geetu Mohandas</li>
+                    <li><span class="bold">Duration :</span> 3h and 12 min </li>
+                </ul>
+            </td>
+           
+
+            
+           
+        </tr>
+
+        <!-- Row 2 -->
+        <tr>
+            <!-- Card 4 -->
+            <td>
+                <div class="poster">
+                    <a href="./the conjuring3.html" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWMOj7hiAx_Uf9IcsKU1c3YatwQhp_S6Tsct_pAMWw2A&s=10" alt="The Conjuring: The Devil Made Me Do It"></a>
+                </div>
+                <ul class="movie-details">
+                    <li><span class="bold">Name :-</span> The Conjuring 3</li>
+                    <li><span class="bold">Genre :</span> Horror | Mystery | Thriller</li>
+                    <li><span class="bold">Rating :</span> <span class="star">★</span> 6.3</li>
+                    <li><span class="bold">Director :</span> Michael Chaves</li>
+                    <li><span class="bold">Duration :</span> 1h  and 52 min </li>
+                </ul>
+            </td>
+
+            <!-- Card 5 -->
+            <td>
+                <div class="poster">
+                    <a href="./the nun.html" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQlqir9i3Eet12OLKmUzGZp5X4EaFNgTD2TQtRM3PQ0w&s=10" alt="The Nun"></a>
+                </div>
+                <ul class="movie-details">
+                    <li><span class="bold">Name :-</span> The Nun</li>
+                    <li><span class="bold">Genre :</span> Horror | Mystery | Thriller</li>
+                    <li><span class="bold">Rating :</span> <span class="star">★</span> 5.3</li>
+                    <li><span class="bold">Director :</span> Corin Hardy</li>
+                    <li><span class="bold">Duration :</span> 1h and 36 min </li>
+                </ul>
+            </td>
+
+            <!-- Card 6 -->
+            <td>
+                <div class="poster">
+                    <a href="./vaazha.html" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF05IBjPCdYhQAloobfyeeTKlgDqCTvotVtJ6VuV1-KA&s=10" alt="Vaazha"></a>
+                </div>
+                <ul class="movie-details">
+                    <li><span class="bold">Name :-</span> Vaazha</li>
+                    <li><span class="bold">Genre :</span> Comedy | Drama</li>
+                    <li><span class="bold">Rating :</span> <span class="star">★</span> 8.0</li>
+                    <li><span class="bold">Director :</span> Anand Menen</li>
+                    <li><span class="bold">Duration :</span> 2h and 05 min </li>
+                </ul>
+            </td>
+
+            
+           
+    
+     
+        </tr>
+    </table>
+</div>
+</body>
+</html>
