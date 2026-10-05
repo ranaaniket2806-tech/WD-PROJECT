@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Submitted - CineVerse</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #0d1117;
+        color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .success-card {
+        background-color: #161b22;
+        border: 1px solid #30363d;
+        border-radius: 12px;
+        padding: 40px 30px;
+        width: 100%;
+        max-width: 450px;
+        text-align: center;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+      }
+
+      .icon-circle {
+        width: 70px;
+        height: 70px;
+        background-color: rgba(46, 160, 67, 0.15);
+        border: 2px solid #2ea043;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+        color: #2ea043;
+        font-size: 36px;
+      }
+
+      .success-card h2 {
+        font-size: 24px;
+        color: #f0f6fc;
+        margin-bottom: 12px;
+      }
+
+      .success-card p {
+        color: #8b949e;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 28px;
+      }
+      .success-card:hover {
+        transform: translateY(-8px);
+        box-shadow:
+          0 30px 70px rgb(0, 0, 0),
+          0 0 45px rgb(0, 0, 0);
+      }
+
+      .btn-container {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 12px 20px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 6px;
+        text-decoration: none;
+        transition:
+          background-color 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .btn-primary {
+        background-color: #238636;
+        color: #ffffff;
+        border: 1px solid #2ea043;
+      }
+
+      .btn-primary:hover {
+        background-color: #2ea043;
+        box-shadow: 0 4px 12px rgba(46, 160, 67, 0.3);
+      }
+      .btn-primary:active {
+        transform: scale(0.98);
+      }
+
+      .btn-secondary {
+        background-color: #21262d;
+        color: #c9d1d9;
+        border: 1px solid #30363d;
+      }
+      .btn-secondary:active {
+        transform: scale(0.98);
+      }
+      .btn-secondary:hover {
+        background-color: #30363d;
+        color: #ffffff;
+        box-shadow: 0 4px 12px rgba(46, 160, 67, 0.3);
+      }
+    </style>
+  </head>
+  <body background="https://wallpaperaccess.com/full/25729676.jpg">
+    <div class="success-card">
+      <div class="icon-circle">✓</div>
+      <h2>Feedback Submitted!</h2>
+      <p>
+        Thank you for helping us improve CineVerse. We have received your
+        response and appreciate your support.
+      </p>
+
+      <div class="btn-container">
+        <a href="./home.html" class="btn btn-primary">Back to Home</a>
+        <a href="./feedback.html" class="btn btn-secondary">Submit Another</a>
+      </div>
+    </div>
+  </body>
+</html>
