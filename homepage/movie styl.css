@@ -3,14 +3,14 @@
             box-sizing: border-box;
         }
 
-        /* Black background & Flexbox vertical/horizontal centering */
+
         body {
             background-color: #000000;
             color: #ffffff;
-            display: flex; /* Added to make centering work */
+            display: flex; 
             justify-content: center;
-            align-items: center; /* Centers vertically */
-            min-height: 100vh; /* Ensures full screen height */
+            align-items: center; 
+            min-height: 100vh; 
             margin: 0;
             padding: 40px 20px;
         }
@@ -19,44 +19,44 @@
         .movie-card {
             background-color: #111111;
             border: 1px solid #222222;
-            border-radius: 12px; /* Added for smoother edges */
+            border-radius: 12px; 
             box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
-            display: flex; /* Aligns poster and details side-by-side */
+            display: flex; 
             max-width: 1000px;
             width: 100%;
-            overflow: hidden; /* Keeps image inside border radius */
-            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover transition */
+            overflow: hidden; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
         }
 
-        /* Card Hover Effect */
+        
         .movie-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 15px 40px rgba(255, 255, 255, 0.15);
         }
 
-        /* Poster Area */
+        
         .poster {
             min-width: 380px;
             width: 380px;
             background: linear-gradient(135deg, #1f1f1f 0%, #0a0a0a 100%);
             display: flex;
             border-right: 1px solid #222222;
-            overflow: hidden; /* Needed for the image zoom effect */
+            overflow: hidden; 
         }
 
         .poster img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.5s ease; /* Image hover transition */
+            transition: transform 0.5s ease; 
         }
 
-        /* Image Zoom Hover Effect */
+    
         .movie-card:hover .poster img {
             transform: scale(1.05);
         }
 
-        /* Movie Details Area */
+        
         .details {
             padding: 40px;
             display: flex;
@@ -99,14 +99,14 @@
             color: #ffffff;
         }
 
-        /* Button Container */
+
         .action-buttons {
             display: flex;
-            gap: 15px; /* Spaces out the buttons uniformly */
+            gap: 15px; 
             flex-wrap: wrap;
         }
 
-        /* Buttons */
+
         .btn-trailer {
             background-color: #ffffff;
             color: #000000;
@@ -115,25 +115,23 @@
             text-decoration: none;
             font-weight: bold;
             text-align: center;
-            transition: all 0.3s ease; /* Added 'all' for background and transform */
+            transition: all 0.3s ease;
             display: inline-block;
         }
 
-        /* Button Hover Effect */
+        
         .btn-trailer:hover {
             background-color: #cccccc;
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
         }
 
-        /* =========================================
-           MEDIA QUERIES (Responsive Design)
-           ========================================= */
+      
 
-        /* Tablet View (Stacked Layout) */
+
         @media screen and (max-width: 850px) {
             .movie-card {
-                flex-direction: column; /* Stacks image on top of details */
+                flex-direction: column;
                 max-width: 600px;
             }
 
@@ -142,7 +140,7 @@
                 min-width: 100%;
                 border-right: none;
                 border-bottom: 1px solid #222222;
-                max-height: 450px; /* Prevents the image from being too tall */
+                max-height: 450px; 
             }
 
             .details {
@@ -154,7 +152,7 @@
             }
         }
 
-        /* Mobile View (Smaller text, full-width buttons) */
+    
         @media screen and (max-width: 480px) {
             body {
                 padding: 20px 10px;
@@ -177,11 +175,11 @@
             }
 
             .action-buttons {
-                flex-direction: column; /* Stack buttons on small screens */
+                flex-direction: column; 
                 gap: 10px;
             }
 
             .btn-trailer {
-                width: 100%; /* Full width buttons for easy tapping */
+                width: 100%; 
             }
         }
